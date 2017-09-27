@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
+	<title>Mapa Transportowa Krakowa</title>
+
+<style type="text/css">
+	h1 {
+		font-family: helvetica;
+	}
+</style>
+
+</head>
+<body>
+
+<div id='heading'><h1>Mapa Transportowa Krakowa</h1></div>
+<div id='map' style='width: 1200px; height: 900px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidG9ydG9sb2dpc3QiLCJhIjoiY2o4MW5xaW5nNnBpMDJ3cnJyMDNjbHR5MiJ9.k7f6x37bwkB_olLTIz4_RA';
+var map = new mapboxgl.Map({
+    container: 'map',
+    zoom: 10,
+    center: [19.950582,50.062179],
+    style: 'mapbox://styles/tortologist/cj83adkb6achy2qntgfj9jiwe'
+});
+</script>
+</body>
+</html>
